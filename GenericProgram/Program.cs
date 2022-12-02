@@ -18,9 +18,13 @@ namespace GenericProgram
             //UC3 finding max out of 3 string.
             FindMaximum.FindMaxValue("abc", "def", "opq");
             //Generic Method
-            FindMaxGenericMethod<int>.FindMaxValue(11, 23, 30);       //find max using generic method
-            FindMaxGenericMethod<float>.FindMaxValue(20.45f, 30.11f, 12.99f);       //find max using generic method
-            FindMaxGenericMethod<string>.FindMaxValue("abc", "def", "ghi");       //find max using generic method
+            FindMaxGenericMethod<int>.FindMaxValue(11, 23, 30);       
+            FindMaxGenericMethod<float>.FindMaxValue(20.45f, 30.11f, 12.99f);       
+            FindMaxGenericMethod<string>.FindMaxValue("abc", "def", "ghi");       
+            //find max using generic class .
+            new FindMaxGenericClass<int>(20, 30, 12).TestMaximum();                   
+            new FindMaxGenericClass<float>(20.45f, 30.11f, 12.99f).TestMaximum();
+            new FindMaxGenericClass<string>("abc", "def", "ghi").TestMaximum();
             Console.ReadLine();
         }
     }
