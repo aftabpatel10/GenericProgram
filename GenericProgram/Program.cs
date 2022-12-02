@@ -27,6 +27,10 @@ namespace GenericProgram
             new FindMaxGenericClass<string>("abc", "def", "ghi").TestMaximum();
             FindMaxParams.MaxValue(45, 23, 54, 6, 23, 43);  //using param -sample 1
             FindMaxParams.MaxValue(45, 6, 23, 43);      //using param-sample 2
+            //UC5
+            int[] arr = { 23, 21, 32, 45, 65, 33 };
+            GenericMaximumUC5<int> genericObj = new GenericMaximumUC5<int>(arr);
+            genericObj.PrintMaxValue();
             Console.ReadLine();
         }
     }
